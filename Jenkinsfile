@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('clean') {
             steps {
-              bath "rmdir /s /q webprueba"
+            //  bath "rmdir /s /q webprueba"
               bath "git clone https://github.com/SamuelPerez27/webprueba.git"
               bat "mvn clean -f webprueba"
              
